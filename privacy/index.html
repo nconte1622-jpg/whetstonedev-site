@@ -32,7 +32,7 @@
   <main id="main" class="wrap">
     <p class="eyebrow">Brief for iPhone</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: <time datetime="2026-11-05">November 5, 2026</time></p>
+    <p class="meta">Effective date: <time datetime="2026-11-15">November 15, 2026</time></p>
 
     <p class="lede">This explains what the Brief app collects, why, who else handles it, what other readers can see, and how to delete it.</p>
 
@@ -124,13 +124,16 @@
     <p>To see which features work, the app sends usage events to PostHog: for example, which briefs you open, your quiz results, streak milestones, when you view Brief Pro or buy it, and when the app is opened or closed. Events carry your Brief account ID, device model, iOS and app version, language and time zone. PostHog receives your IP address when the app sends them, and is set to discard it rather than store it. PostHog keeps events for 1 year. We don’t send your email, your name or what you write.</p>
 
 
+    <h3 id="notifications">Notifications</h3>
+    <p>If you allow notifications, Brief stores your device’s push token (a code from Apple that lets us send a notification to your device) with your account. We use it only to tell you when a Deep Dive you started or joined is ready, or did not finish. Notifications are sent through Apple’s Push Notification service; no other company receives your token. The token is removed when you sign out, when Apple tells us it is no longer valid, or when you delete your account. You can turn notifications off at any time in your iPhone’s Settings.</p>
+
     <h3>On your phone</h3>
     <p>Your sign-in is stored encrypted on your phone, with its key in the iPhone Keychain. Your settings, streak and recently loaded briefs are stored in the app so it opens quickly and works offline. Deleting the app removes them.</p>
 
     <!-- ── 3 ──────────────────────────────────────────────────────────── -->
     <h2 id="permissions">Permissions Brief asks for</h2>
     <ul>
-      <li><strong>Notifications:</strong> one daily reminder at the time you choose, scheduled on your phone. Brief doesn’t send push notifications from a server. Turn it on or off in <span class="path">Profile → Notifications</span>.</li>
+      <li><strong>Notifications:</strong> only when you turn on the daily reminder or ask to be told when a Deep Dive is ready. The daily reminder is scheduled on your phone, at the time you choose; turn it on or off in <span class="path">Profile → Notifications</span>. A Deep Dive notification is sent through Apple (see <a href="#notifications">Notifications</a> above). You can turn all of Brief’s notifications off in your iPhone’s Settings.</li>
       <li><strong>Camera and photos:</strong> only when you choose to take or pick a profile photo.</li>
       <li><strong>Microphone and speech recognition:</strong> only when you speak in a debate.</li>
     </ul>
@@ -154,7 +157,7 @@
       <h3 id="p-supabase">Supabase</h3>
       <dl>
         <dt>Receives</dt>
-        <dd>Everything our server keeps: your account, profile, photo, progress, debates, squads and reports, and the technical logs of requests to our server.</dd>
+        <dd>Everything our server keeps: your account, profile, photo, progress, debates, squads and reports, your device’s push token if you allow notifications, and the technical logs of requests to our server.</dd>
         <dt>Why</dt>
         <dd>It hosts Brief’s database, sign-in, file storage and server functions.</dd>
         <dt>Policy</dt>
@@ -166,9 +169,9 @@
       <h3 id="p-apple">Apple</h3>
       <dl>
         <dt>Receives</dt>
-        <dd>Sign in with Apple, App Store purchases, the request to revoke Sign in with Apple when you delete your account, and audio if you speak in a debate.</dd>
+        <dd>Sign in with Apple, App Store purchases, the request to revoke Sign in with Apple when you delete your account, audio if you speak in a debate, and, if you allow notifications, your device’s push token with each Deep Dive notification.</dd>
         <dt>Why</dt>
-        <dd>Sign-in, payments and speech recognition.</dd>
+        <dd>Sign-in, payments, speech recognition and notifications.</dd>
         <dt>Policy</dt>
         <dd><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></dd>
       </dl>
@@ -295,7 +298,7 @@
     <h2 id="choices">Your choices and rights</h2>
     <ul>
       <li>Change or clear your name on the board, photo, hometown and college in <span class="path">Profile → Account</span>.</li>
-      <li>Turn the daily reminder off in <span class="path">Profile → Notifications</span>.</li>
+      <li>Turn the daily reminder off in <span class="path">Profile → Notifications</span>, or all of Brief’s notifications off in your iPhone’s Settings.</li>
       <li>Unblock readers in <span class="path">Profile → Blocked readers</span>.</li>
       <li>Write to <a href="mailto:dev@whetstonedev.net">dev@whetstonedev.net</a> to ask for a copy of your data, to correct it, or to delete it.</li>
     </ul>
