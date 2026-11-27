@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["P7N677SK5K.com.whetstone.brief"],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Squad invites: https://whetstonedev.net/join/<code> opens Join a squad in Brief with the code filled in."
+          }
+        ]
+      }
+    ]
+  }
+}
