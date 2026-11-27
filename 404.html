@@ -39,6 +39,20 @@
       <li><a class="button" href="/privacy/">Privacy policy</a></li>
       <li><a class="button" href="/support/">Support</a></li>
     </ul>
+
+    <!--
+      Squad invites are https://whetstonedev.net/join/<code>. With Brief on the
+      iPhone, the link opens the squad in Brief (/.well-known/apple-app-site-association
+      claims /join/*). Without it, GitHub Pages serves this page, and with no
+      scripts on the site it can't read the code from the address, so it says
+      where to type it. No App Store link until Brief is in the App Store.
+    -->
+    <section class="card" aria-labelledby="squad-link">
+      <h2 id="squad-link">Opened a squad link?</h2>
+      <p>It opens a squad in Brief on iPhone.</p>
+      <p class="taps">Open Brief, go to <span class="path">Board</span>, tap <strong>+</strong>, choose <strong>Join with code</strong>, and type the code from the message.</p>
+    </section>
+
     <p class="meta">Looking for something else? Write to <a href="mailto:dev@whetstonedev.net">dev@whetstonedev.net</a>.</p>
   </main>
 
